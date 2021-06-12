@@ -6,10 +6,9 @@ app = Flask(__name__)
 def index():
     return 'Whats up boss'
 
-@app.route('/<string: name>')
+@app.route('/<string:name>')
 def greet(name): 
     return f'Hello {name}'
 
 if __name__ == '__main__':
     app.run(debug=True)
-
